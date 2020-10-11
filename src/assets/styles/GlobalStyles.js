@@ -7,9 +7,9 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(18, 18, 18);
+  background-color: #000;
   color: #fff;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
 h1,
