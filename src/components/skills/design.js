@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const SkillPannel = styled.div`
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
   padding: 30px 15px;
   background: #000;
@@ -48,11 +48,11 @@ const SkillHeading = styled.h3`
   left: 15px;
 `;
 
-const FrameworksSkill = () => {
+const DesignSkill = () => {
   const data = useStaticQuery(
     graphql`
       {
-        allFile(filter: { absolutePath: { regex: "/frameworks/" } }, sort: { fields: name }) {
+        allFile(filter: { absolutePath: { regex: "/design/" } }, sort: { fields: name }) {
           nodes {
             id
             childImageSharp {
@@ -67,7 +67,7 @@ const FrameworksSkill = () => {
   );
   return (
     <SkillPannel>
-      <SkillHeading>Frameworki / Biblioteki</SkillHeading>
+      <SkillHeading>Design / Grafika</SkillHeading>
       {data
         ? data.allFile.nodes.map((skill) => (
             <SkillImg key={skill.id} fixed={skill.childImageSharp.fixed} />
@@ -76,4 +76,4 @@ const FrameworksSkill = () => {
     </SkillPannel>
   );
 };
-export default FrameworksSkill;
+export default DesignSkill;
