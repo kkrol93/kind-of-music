@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-layout',
     'hard-source-webpack-plugin',
     'gatsby-plugin-mdx',
+    'gatsby-plugin-fontawesome-css',
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,6 +24,13 @@ module.exports = {
       options: {
         name: `hobbies`,
         path: `${__dirname}/src/data/hobbies`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/src/data/portfolio`,
       },
     },
     `gatsby-transformer-sharp`,

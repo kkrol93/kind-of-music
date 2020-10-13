@@ -4,12 +4,11 @@ import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const SkillPannel = styled.div`
-  max-width: 500px;
   width: 100%;
   padding: 30px 15px;
   background: #000;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   position: relative;

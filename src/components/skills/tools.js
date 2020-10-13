@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const SkillPannel = styled.div`
   width: 100%;
+  margin: 0px 0;
   padding: 30px 15px;
   background: #000;
   display: flex;
@@ -47,11 +48,11 @@ const SkillHeading = styled.h3`
   left: 15px;
 `;
 
-const FrameworksSkill = () => {
+const ToolsSkill = () => {
   const data = useStaticQuery(
     graphql`
       {
-        allFile(filter: { absolutePath: { regex: "/frameworks/" } }, sort: { fields: name }) {
+        allFile(filter: { absolutePath: { regex: "/tools/" } }, sort: { fields: name }) {
           nodes {
             id
             childImageSharp {
@@ -66,7 +67,7 @@ const FrameworksSkill = () => {
   );
   return (
     <SkillPannel>
-      <SkillHeading>Frameworki / Biblioteki</SkillHeading>
+      <SkillHeading>Inne</SkillHeading>
       {data
         ? data.allFile.nodes.map((skill) => (
             <SkillImg key={skill.id} fixed={skill.childImageSharp.fixed} />
@@ -75,4 +76,4 @@ const FrameworksSkill = () => {
     </SkillPannel>
   );
 };
-export default FrameworksSkill;
+export default ToolsSkill;
