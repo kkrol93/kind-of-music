@@ -22,7 +22,7 @@ const AnimationContainer = styled.div`
   width: 100%;
 `;
 const ContactIcon = styled(FontAwesomeIcon)`
-  font-size: 50px;
+  font-size: 50px !important;
   margin-right: 20px !important;
 `;
 const ContactParagraph = styled.p`

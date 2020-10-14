@@ -74,7 +74,7 @@ const SiteLinks = styled.div`
   margin-top: 10px;
 `;
 const Icon = styled(FontAwesomeIcon)`
-  font-size: 40px;
+  font-size: 40px !important;
   color: #9b1112;
 `;
 

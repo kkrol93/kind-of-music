@@ -30,7 +30,7 @@ const Space = () => {
       1
     );
     tl.fromTo(fire, { scale: 0 }, { scale: 1, duration: 2 }, 1);
-    tl.fromTo(background.children, {}, { autoAlpha: 1, duration: 5 }, 2);
+    tl.fromTo(background.children, { scaleX: 0 }, { scaleX: 1, autoAlpha: 1, duration: 3 }, 2);
     tl.fromTo(details.children, {}, { autoAlpha: 1, duration: 4 }, 3);
   }, []);
   return (
