@@ -28,6 +28,7 @@ const Navigation = () => (
       <StyledLink to="/hobbies">Zainteresowania</StyledLink>
       <StyledLink to="/skills">Umiejętności</StyledLink>
       <StyledLink to="/portfolio">Portfolio</StyledLink>
+      <StyledLink to="/contact">Kontakt</StyledLink>
     </div>
   </Nav>
 );

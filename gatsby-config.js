@@ -11,7 +11,14 @@ module.exports = {
     'hard-source-webpack-plugin',
     'gatsby-plugin-mdx',
     'gatsby-plugin-fontawesome-css',
-
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
