@@ -15,21 +15,26 @@ const StyledLink = styled(Link)`
   padding: 5px 20px;
   font-weight: 700;
   font-family: 'Courgette', cursive;
-  font-size: 20px;
+  font-size: 10px;
   transition: color 0.3s linear;
   &:hover {
     color: #9b1112;
   }
 `;
+const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+`;
 const Navigation = () => (
   <Nav>
-    <div>
+    <Links>
       <StyledLink to="/">Home</StyledLink>
       <StyledLink to="/hobbies">Zainteresowania</StyledLink>
       <StyledLink to="/skills">Umiejętności</StyledLink>
       <StyledLink to="/portfolio">Portfolio</StyledLink>
       <StyledLink to="/contact">Kontakt</StyledLink>
-    </div>
+    </Links>
   </Nav>
 );
 export default Navigation;

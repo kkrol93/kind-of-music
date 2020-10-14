@@ -8,18 +8,19 @@ const Header = styled.header`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 100vh;
 `;
 const HeaderImage = styled(Image)`
-  max-width: 950px;
+  max-width: 650px;
   width: 100%;
   height: auto;
 `;
 const HeaderText = styled.div`
-  max-width: 800px;
+  max-width: 750px;
 
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px;
   display: flex;
 
   justify-content: flex-end;
@@ -53,6 +54,9 @@ const ShadowBox = styled.div`
     z-index: -2;
     filter: blur(10px);
     background: linear-gradient(235deg, #9b1112, #010615, #9b1112);
+  }
+  @media (max-width: 800px) {
+    margin-top: 50px;
   }
 `;
 const HeaderHeading = styled.h1`

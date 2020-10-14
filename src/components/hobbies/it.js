@@ -9,6 +9,11 @@ const StyledIt = styled.section`
   position: relative;
 
   margin: 0 0 0.5vh 0.5vh;
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
 `;
 const Text = styled.div`
   position: absolute;
@@ -33,6 +38,12 @@ const Text = styled.div`
     padding: 0 150px 20px 30px;
     transition: opacity 0.5s linear;
     line-height: 2;
+    @media (max-width: 800px) {
+      opacity: 1;
+      padding: 10px;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
 `;
 const StyledImg = styled(Image)`
@@ -41,6 +52,11 @@ const StyledImg = styled(Image)`
   left: 0;
   height: 40vh;
   z-index: 0;
+  @media (max-width: 800px) {
+    object-fit: cover !important;
+    height: 100%;
+    bottom: 0;
+  }
 `;
 
 const It = () => {

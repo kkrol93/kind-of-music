@@ -11,9 +11,10 @@ const StyledContact = styled.main`
   padding: 20px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
 const ContactText = styled.div`
-  max-width: 500px;
+  max-width: 450px;
   width: 100%;
   padding: 20px;
 `;
@@ -28,6 +29,9 @@ const ContactIcon = styled(FontAwesomeIcon)`
 const ContactParagraph = styled.p`
   margin-bottom: 15px;
   font-size: 20px;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 const ContactHeading = styled.h1`
   margin-bottom: 15px;

@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const SkillPannel = styled.div`
   width: 100%;
-  padding: 30px 15px;
+  padding: 30px 5px;
   background: #000;
   display: flex;
   justify-content: space-around;
@@ -38,6 +38,10 @@ const SkillPannel = styled.div`
 `;
 const SkillImg = styled(Image)`
   margin: 0 10px 10px;
+  @media (max-width: 800px) {
+    max-height: 80px;
+    margin: 10px 0;
+  }
 `;
 const SkillHeading = styled.h3`
   position: absolute;

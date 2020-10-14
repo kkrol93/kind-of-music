@@ -13,6 +13,9 @@ const HobbiesContainer = styled.article`
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 800px) {
+    height: auto;
+  }
 `;
 
 const Hobbies = () => {
