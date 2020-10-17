@@ -41,8 +41,8 @@ const Portfolio = () => {
   );
   return (
     <StyledPortfolio>
-      {data.allMdx.edges.map((site) => (
-        <Site site={site.node.frontmatter} key={site.node.id} />
+      {data.allMdx.edges.map((site, index) => (
+        <Site site={site.node.frontmatter} key={site.node.id} id={index} />
       ))}
     </StyledPortfolio>
   );

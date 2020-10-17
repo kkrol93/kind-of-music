@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeEurope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import gsap from 'gsap';
 
 const StyledSite = styled.div`
   max-width: 500px;
@@ -78,9 +79,17 @@ const Icon = styled(FontAwesomeIcon)`
   color: #9b1112;
 `;
 
-const Site = ({ site: { title, img, tech, link, github } }) => {
+const Site = ({ site: { title, img, tech, link, github }, id }) => {
+  useEffect(() => {
+    const SiteElement = document.getElementById(id);
+    gsap.set([SiteElement], {
+      autoAlpha: 0,
+    });
+    let tl = gsap.timeline({});
+    tl.fromTo(SiteElement, { scale: 0 }, { scale: 1, autoAlpha: 1 }, id / 2);
+  }, []);
   return (
-    <StyledSite>
+    <StyledSite id={id}>
       <SiteImage fluid={img.childImageSharp.fluid} />
       <SiteText>
         <h3>{title}</h3>
@@ -107,5 +116,6 @@ const Site = ({ site: { title, img, tech, link, github } }) => {
 };
 Site.propTypes = {
   site: PropTypes.object,
+  id: PropTypes.number,
 };
 export default Site;

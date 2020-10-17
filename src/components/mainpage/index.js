@@ -18,7 +18,7 @@ const Header = styled.main`
     margin-top: 200px;
   }
   @media (min-width: 1250px) {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 `;
 const HeaderImage = styled(Image)`

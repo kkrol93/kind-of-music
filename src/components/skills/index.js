@@ -34,7 +34,6 @@ const Skills = () => {
       </ColumnSkills>
       <ColumnSkills>
         <DesignSkill />
-
         <ToolsSkill />
       </ColumnSkills>
     </StyledSkills>
