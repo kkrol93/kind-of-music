@@ -39,7 +39,7 @@ const SkillPannel = styled.div`
 `;
 const SkillImg = styled(Image)`
   margin: 0 10px 10px;
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     margin: 10px 0;
   }
 `;

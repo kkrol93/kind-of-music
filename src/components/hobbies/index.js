@@ -10,7 +10,7 @@ const StyledHobbies = styled.main`
 `;
 const HobbiesContainer = styled.article`
   width: 100%;
-  height: 80vh;
+
   display: flex;
   flex-wrap: wrap;
   @media (max-width: 800px) {
@@ -18,16 +18,15 @@ const HobbiesContainer = styled.article`
   }
 `;
 
-const Hobbies = () => {
-  return (
-    <StyledHobbies>
-      <HobbiesContainer>
-        <Music />
-        <It />
-        <Travels />
-        <Psychology />
-      </HobbiesContainer>
-    </StyledHobbies>
-  );
-};
+const Hobbies = () => (
+  <StyledHobbies>
+    <HobbiesContainer>
+      <Music id="music" />
+      <It id="it" />
+      <Travels id="travels" />
+      <Psychology id="psychology" />
+    </HobbiesContainer>
+  </StyledHobbies>
+);
+
 export default Hobbies;

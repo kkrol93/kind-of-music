@@ -11,8 +11,10 @@ const StyledSkills = styled.main`
   width: 100%;
   display: flex;
   padding: 15px;
-  flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+  }
 `;
 const ColumnSkills = styled.div`
   max-width: 500px;

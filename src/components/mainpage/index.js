@@ -4,12 +4,22 @@ import Image from 'gatsby-image';
 import styled from 'styled-components';
 import gsap from 'gsap';
 
-const Header = styled.header`
+const Header = styled.main`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 100vh;
+
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media (min-width: 850px) {
+    margin-top: 200px;
+  }
+  @media (min-width: 1250px) {
+    margin-top: 100px;
+  }
 `;
 const HeaderImage = styled(Image)`
   max-width: 650px;
@@ -17,14 +27,18 @@ const HeaderImage = styled(Image)`
   height: auto;
 `;
 const HeaderText = styled.div`
-  max-width: 750px;
-
   width: 100%;
   padding: 20px;
   display: flex;
-
   justify-content: flex-end;
   align-items: center;
+  margin: 10 auto;
+  @media (min-width: 700px) {
+    max-width: 800px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 750px;
+  }
 `;
 const ShadowBox = styled.div`
   max-width: 700px;
@@ -55,8 +69,8 @@ const ShadowBox = styled.div`
     filter: blur(10px);
     background: linear-gradient(235deg, #9b1112, #010615, #9b1112);
   }
-  @media (max-width: 800px) {
-    margin-top: 50px;
+  @media (max-width: 850px) {
+    margin: 50px auto 10px;
   }
 `;
 const HeaderHeading = styled.h1`

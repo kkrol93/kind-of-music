@@ -34,6 +34,9 @@ const SkillPannel = styled.div`
     z-index: -2;
     filter: blur(10px);
     background: linear-gradient(235deg, #9b1112, #010615, #9b1112);
+    @media (max-width: 800px) {
+      margin: 50px auto;
+    }
   }
 `;
 const SkillImg = styled(Image)`

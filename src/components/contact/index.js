@@ -11,7 +11,9 @@ const StyledContact = styled.main`
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+  }
 `;
 const ContactText = styled.div`
   max-width: 450px;
