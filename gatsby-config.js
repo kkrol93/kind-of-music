@@ -51,7 +51,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/kom.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -61,10 +61,12 @@ module.exports = {
           {
             family: 'Montserrat',
             variants: ['300', '400', '600', '700'],
+            subsets: [`latin`],
           },
           {
-            family: 'Courgette',
+            family: 'Kaushan Script',
             variants: ['400'],
+            subsets: [`latin-ext`],
           },
           {
             family: 'Metal Mania',

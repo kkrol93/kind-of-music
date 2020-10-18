@@ -17,7 +17,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 5px 20px;
   font-weight: 700;
-  font-family: 'Courgette', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-size: 20px;
   transition: color 0.3s linear;
   background: #000;

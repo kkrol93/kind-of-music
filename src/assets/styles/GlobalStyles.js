@@ -16,7 +16,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Courgette', cursive;
+font-family: 'Kaushan Script', cursive;
 }
 ul {
     padding: 0;

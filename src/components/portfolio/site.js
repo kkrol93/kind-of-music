@@ -83,10 +83,10 @@ const Site = ({ site: { title, img, tech, link, github }, id }) => {
   useEffect(() => {
     const SiteElement = document.getElementById(id);
     gsap.set([SiteElement], {
-      autoAlpha: 0,
+      scale: 0,
     });
     let tl = gsap.timeline({});
-    tl.fromTo(SiteElement, { scale: 0 }, { scale: 1, autoAlpha: 1 }, id / 2);
+    tl.fromTo(SiteElement, {}, { scale: 1 }, id / 2);
   }, []);
   return (
     <StyledSite id={id}>
