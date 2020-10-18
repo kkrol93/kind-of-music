@@ -9,8 +9,8 @@ This is my portfolio project. Gatsby, Styled-Components
 1. npm / yarn intsall
 2. gatsby develop
 
-## If you want clear cache - ude gatsby clean
+ *If you want clear cache - ude gatsby clean*
 
-## To build app use gatsby build
+ *To build app use gatsby build*
 
 # Have fun
